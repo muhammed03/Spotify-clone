@@ -1,0 +1,129 @@
+$greyDark: #040404;
+$greyLight: #131313;
+$greyLighter: #282828;
+$greyText: #b3b3b3;
+$greyNav: #090909;
+$greenMain: #1db954;
+
+
+
+
+.control-button {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    vertical-align: middle;
+    cursor: pointer;
+    outline: none;
+    img {
+      width: 20px;
+      height: 20px;
+    }
+}
+  
+.progressBar {
+    width: 100%;
+    height: 12px;
+    display: inline-flex;
+    cursor: pointer;
+    .progressBarBg {
+      background-color: #404040;
+      height: 4px;
+      width: 100%;
+      border-radius: 2px;
+      margin-top: 3px;
+      .progress {
+        background-color: #a0a0a0;
+        height: 4px;
+        width: 60%;
+        border-radius: 2px;
+      }
+    }
+  }
+  
+.musicControls {
+    background: $greyLighter;
+    border-top: 1px solid $greyDark;
+    width: 100%;
+    position: fixed;
+    .playingBar {
+      width: 100%;
+      height: 90px;
+      padding: 16px;
+      display: flex;
+      .nowPlaiyngLeft, .nowPlaiyngRight {
+        width: 30%;
+        min-width: 180px;
+      }
+  
+      .nowPlaiyngRight .volumeBar {
+        width: 180px;
+        position: absolute;
+        margin-top: 10px;
+        right: 0;
+        .progressBar {
+          width: 125px;
+  
+        }      
+      }
+  
+      .nowPlaiyngLeft {
+        .albumArtWork {
+          height: 56px;
+          max-width: 56px;
+          margin-right: 15px;
+          float: left;
+        }
+  
+        .player-content {
+          .trackInfo {
+            display: table;
+            .trackName {
+              display: inline-block;
+              width: 100%;
+              font-size: 14px;
+              line-height: normal;
+              padding-top: 10px;
+            }
+  
+            .artistName{
+              font-size: 12px;
+              span {
+                color: #b3b3a6;
+              }
+            }
+          }
+        }
+      }
+  
+      .nowPlaiyngCenter{
+        width: 40%;
+        max-width: 700px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .player-content {
+          width: 100%;
+          height: 60px;
+          .playback-bar {
+            display: flex;
+            
+            .progressTime {
+              color: #a0a0a0;
+              font-size: 11px;
+              min-width: 40px;
+              text-align: center;
+            }
+          }
+        }
+        .player-controls .player-buttons {
+          margin: 0 auto;
+          display: table;
+  
+          .play img, .pause img{
+            width: 32px;
+            height: 32px;
+          }
+        }
+      }
+    }
+}

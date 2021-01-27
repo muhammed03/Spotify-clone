@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom'
 import { ReactComponent as PlayIcon } from '../../svgs/play.svg'
 import { ReactComponent as HeartIcon } from '../../svgs/heart.svg'
 import { ReactComponent as NoteIcon } from '../../svgs/note.svg'
+import './Playlist.scss'
 
 const PlaylistPage = () => {
     let { id } = useParams()

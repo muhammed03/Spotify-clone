@@ -1,9 +1,10 @@
 
 import React from 'react'
-import { ReactComponent as HomeIcon } from '../svgs/home.svg'
-import { ReactComponent as SearchIcon } from '../svgs/search.svg'
-import { ReactComponent as LibraryIcon } from '../svgs/library.svg'
+import { ReactComponent as HomeIcon } from '../../svgs/home.svg'
+import { ReactComponent as SearchIcon } from '../../svgs/search.svg'
+import { ReactComponent as LibraryIcon } from '../../svgs/library.svg'
 import { Link } from 'react-router-dom'
+import './Nav.scss'
 
 const Nav = () => {
     return (

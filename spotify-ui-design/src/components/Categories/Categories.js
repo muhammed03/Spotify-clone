@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from 'react'
-import Playlists from './Playlists'
+import Playlists from '../Playlists'
 
 const Categories = () => {
     const [limiter, setLimiter] = useState(0)

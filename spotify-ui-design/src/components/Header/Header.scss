@@ -1,0 +1,55 @@
+
+$greyDark: #040404;
+$greyLight: #131313;
+$greyLighter: #282828;
+$greyText: #b3b3b3;
+$greyNav: #090909;
+$greenMain: #1db954;
+
+@font-face {
+  font-family: circular-book;
+  src: url(../../fonts/CircularStd-Book.otf);
+}
+
+@font-face {
+  font-family: circular-bold;
+  src: url(../../fonts/CircularStd-Bold.otf);
+}
+
+@font-face {
+  font-family: circular-black;
+  src: url(../../fonts/CircularStd-Black.otf);
+}
+
+
+.upperNav {
+    background: rgba(9, 9, 9, 0.726);
+    height: 56px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 0.5rem 2rem;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    .upperNav-buttons button{
+      border-radius: 50%;
+      background-color: $greyDark;
+      outline: none;
+      border: none;
+      margin-right: 15px;
+      font-weight: normal;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      font-family: circular-bold;
+      align-items: center;
+      justify-content: center;
+      svg {
+        width: 22px;
+        height: 28px;
+      }
+    }
+}
+  
+  

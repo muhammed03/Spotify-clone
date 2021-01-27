@@ -1,0 +1,16 @@
+.main {
+    width: 100%;
+    overflow-y: scroll;
+    position: relative;
+    padding-top: 3.4rem;
+    .mainContent {
+      color: white;
+  
+      .mainInner {
+        padding: 0.5rem 2rem;
+      }
+      h2 {
+        font-size: 1.8rem;
+      }
+    }
+  }

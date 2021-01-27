@@ -1,17 +1,14 @@
 import React from 'react'
-import Categories from './Categories'
+import Categories from '../Categories/'
+import Header from '../Header/'
 import { Switch, Route } from 'react-router-dom'
-import PlaylistPage from './pages/Playlist'
+import PlaylistPage from '../pages/Playlist'
+import './Main.scss'
 
 const Main = () => {
     return (
         <div className="main">
-            <div className="upperNav">
-                <div className="upperNav-buttons">
-                    <button>&#60;</button>
-                    <button>&#62;</button>
-                </div>
-            </div>
+            <Header />
             <div className="mainContent">
                 <Switch>
                     <Route path="/" exact component={Categories}></Route>

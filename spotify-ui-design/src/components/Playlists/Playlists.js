@@ -1,10 +1,12 @@
 import React from 'react'
-import { ReactComponent as PlayIcon } from '../svgs/play.svg'
+import { ReactComponent as PlayIcon } from '../../svgs/play.svg'
 import { Link } from 'react-router-dom'
+import './Playlists.scss'
 
 const Playlists = props => {
     const dataPlaylists = [
         {
+            id: 101,
             category_id: 1,
             name: 'Home playlist 1',
             img:
@@ -12,6 +14,7 @@ const Playlists = props => {
             desc: 'Tag',
         },
         {
+            id: 102,
             category_id: 2,
             name: 'Home playlist 1',
             img:
@@ -19,6 +22,7 @@ const Playlists = props => {
             desc: 'Tag',
         },
         {
+            id: 103,
             category_id: 3,
             name: 'Home playlist 1',
             img:
@@ -26,6 +30,7 @@ const Playlists = props => {
             desc: 'Tag',
         },
         {
+            id: 104,
             category_id: 4,
             name: 'Home playlist 1',
             img:
@@ -33,6 +38,7 @@ const Playlists = props => {
             desc: 'Tag',
         },
         {
+            id: 105,
             category_id: 4,
             name: 'Home playlist 1',
             img:

@@ -1,7 +1,7 @@
 import React from 'react'
-import Nav from './components/Nav'
-import Main from './components/Main'
-import Player from './components/Player'
+import Nav from './components/Nav/'
+import Main from './components/Main/'
+import Player from './components/Player/'
 
 import './App.scss'
 
