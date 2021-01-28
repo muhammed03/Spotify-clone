@@ -5,15 +5,14 @@ $greyText: #b3b3b3;
 $greyNav: #090909;
 $greenMain: #1db954;
 
-
-
-
 .control-button {
     background-color: rgba(0, 0, 0, 0);
     border: none;
     vertical-align: middle;
     cursor: pointer;
     outline: none;
+    margin-right: 8px;
+    margin-left: 8px;
     img {
       width: 20px;
       height: 20px;
@@ -38,7 +37,7 @@ $greenMain: #1db954;
         border-radius: 2px;
       }
     }
-  }
+}
   
 .musicControls {
     background: $greyLighter;
@@ -84,7 +83,6 @@ $greenMain: #1db954;
               line-height: normal;
               padding-top: 10px;
             }
-  
             .artistName{
               font-size: 12px;
               span {
@@ -93,37 +91,6 @@ $greenMain: #1db954;
             }
           }
         }
-      }
-  
-      .nowPlaiyngCenter{
-        width: 40%;
-        max-width: 700px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        .player-content {
-          width: 100%;
-          height: 60px;
-          .playback-bar {
-            display: flex;
-            
-            .progressTime {
-              color: #a0a0a0;
-              font-size: 11px;
-              min-width: 40px;
-              text-align: center;
-            }
-          }
-        }
-        .player-controls .player-buttons {
-          margin: 0 auto;
-          display: table;
-  
-          .play img, .pause img{
-            width: 32px;
-            height: 32px;
-          }
-        }
-      }
+      } 
     }
 }
