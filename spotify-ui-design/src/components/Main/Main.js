@@ -12,8 +12,8 @@ const Main = () => {
             <div className="mainContent">
                 <Switch>
                     <Route path="/" exact component={Categories}></Route>
-                    <Route path="/search"></Route>
-                    <Route path="/your-library"></Route>
+                    <Route path="/search">Search</Route>
+                    <Route path="/your-library">Your-libary</Route>
                     <Route path="/playlist/" component={PlaylistPage}></Route>
                 </Switch>
             </div>
