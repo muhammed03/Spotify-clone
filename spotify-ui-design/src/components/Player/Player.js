@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import volume from "../../images/icons/volume.png"
-import Audio from './Audio'
+import Audio from './Audio/Audio'
 import './Player.scss'
 
 export default class Player extends Component{

@@ -1,0 +1,116 @@
+$greyDark: #040404;
+$greyLight: #131313;
+$greyLighter: #282828;
+$greyText: #b3b3b3;
+$greyNav: #090909;
+$greenMain: #1db954;
+
+
+
+.hide {
+  display: none;
+}
+
+.player {
+  width: 40%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  .player-content {
+    width: 100%;
+    height: 60px;
+    .controls {
+    flex-grow: 1;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    }
+  
+
+    .player__button {
+      width: fit-content;
+      background-color: transparent;
+      border: none;
+      &:focus {
+        outline: none;
+      }
+      &:hover {
+        cursor: pointer;
+      }
+      &:active {
+        transform: scale(0.9);
+      }
+
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    } 
+
+    .bar {
+      user-select: none;
+      align-items: center;
+      width: 100%;
+      height: 4px;
+      display: inline-flex;
+      cursor: pointer;
+          
+      .bar__time {
+        color: #a0a0a0;
+        font-size: 11px;
+        min-width: 40px;
+        text-align: center;
+      }
+
+      .bar__progress {
+        flex: 1;
+        margin: 0 20px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;      
+        background-color: #404040;
+        height: 4px;
+        width: 100%;
+        border-radius: 2px;
+        margin-top: 3px;
+
+        .bar__progress__knob {
+          position: relative;
+          height: 16px;
+          width: 16px;
+          border: 1.5px solid white;
+          border-radius: 50%;
+          background-color: white;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 800px) {
+    flex-direction: column;
+
+    .controls {
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    .bar {
+      width: 90%;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .song {
+      .song__title {
+        font-size: 2.5em;
+      }
+
+      .song__artist {
+        font-size: 0.8em;
+      }
+    }
+  }
+}

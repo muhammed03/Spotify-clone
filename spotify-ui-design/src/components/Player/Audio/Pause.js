@@ -1,12 +1,12 @@
 import React from "react";
-import play from "../../images/icons/play.png"
+import pause from "../../../images/icons/pause.png"
 
 export default function Play(props) {
   const { handleClick } = props;
-
+  
   return (
     <button className="player__button control-button" onClick={() => handleClick()}>
-        <img src={play} alt="play"/>
+        <img src={pause} alt="pause"/>
     </button>
   );
 }
