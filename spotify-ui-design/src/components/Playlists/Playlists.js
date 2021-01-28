@@ -6,7 +6,6 @@ import './Playlists.scss'
 const Playlists = props => {
     const dataPlaylists = [
         {
-            id: 101,
             category_id: 1,
             name: 'Home playlist 1',
             img:
@@ -14,7 +13,6 @@ const Playlists = props => {
             desc: 'Tag',
         },
         {
-            id: 102,
             category_id: 2,
             name: 'Home playlist 1',
             img:
@@ -22,7 +20,6 @@ const Playlists = props => {
             desc: 'Tag',
         },
         {
-            id: 103,
             category_id: 3,
             name: 'Home playlist 1',
             img:
@@ -30,7 +27,6 @@ const Playlists = props => {
             desc: 'Tag',
         },
         {
-            id: 104,
             category_id: 4,
             name: 'Home playlist 1',
             img:
@@ -38,7 +34,6 @@ const Playlists = props => {
             desc: 'Tag',
         },
         {
-            id: 105,
             category_id: 4,
             name: 'Home playlist 1',
             img:
@@ -49,13 +44,12 @@ const Playlists = props => {
 
     let matchedPlaylists = dataPlaylists
         .filter(playlist => playlist.category_id === props.category_id)
-        .slice(0, props.limiter)
 
     return (
         <div className="cardsWrapInner">
-            {matchedPlaylists.map((playlist, id) => (
-                <Link to={`/playlist/` + playlist.id} key={id}>
-                    <div className="card" key={id}>
+            {matchedPlaylists.map((playlist) => (
+                <Link to={`/playlist/`}>
+                    <div className="card">
                         <div className="cardImage">
                             <img src={playlist.img} alt="Pic 1" />
                         </div>

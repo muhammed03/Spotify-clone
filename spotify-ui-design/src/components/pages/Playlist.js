@@ -23,7 +23,7 @@ const PlaylistPage = () => {
 
                         <p className="tagline">
                            Playlist Tag
-            </p>
+                        </p>
                         <div className="playlistPageDesc">
                             <p className="spotify">Spotify</p>
                             <span>Number of likes</span>

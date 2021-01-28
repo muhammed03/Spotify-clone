@@ -52,7 +52,7 @@ html, body {
 /* width */
 ::-webkit-scrollbar {
   transition: all 0.3s ease-in-out;
-  width: 15px;
+  width: 10px;
 }
 
 /* Track */
@@ -64,6 +64,7 @@ html, body {
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background:#5a5a5a; 
+  border-radius: 10px;
 }
 
 /* Handle on hover */

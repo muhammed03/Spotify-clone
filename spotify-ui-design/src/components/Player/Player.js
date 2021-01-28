@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import volume from "../../images/icons/volume.png"
 import Volume from "./Volume"
 import Audio from './Audio/Audio'
 import './Player.scss'

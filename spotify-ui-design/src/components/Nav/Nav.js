@@ -22,8 +22,8 @@ const Nav = () => {
                 <Link to="/">
                     <li className="active">
                         <HomeIcon />
-            Home
-          </li>
+                             Home
+                </li>
                 </Link>
                 <Link to="/search">
                     <li>

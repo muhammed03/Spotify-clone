@@ -12,9 +12,9 @@ const Main = () => {
             <div className="mainContent">
                 <Switch>
                     <Route path="/" exact component={Categories}></Route>
-                    <Route path="/search">Search</Route>
-                    <Route path="/your-library">Your library</Route>
-                    <Route path="/playlist/:id" component={PlaylistPage}></Route>
+                    <Route path="/search"></Route>
+                    <Route path="/your-library"></Route>
+                    <Route path="/playlist/" component={PlaylistPage}></Route>
                 </Switch>
             </div>
         </div>
