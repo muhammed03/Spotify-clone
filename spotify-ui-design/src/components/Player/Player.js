@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import volume from "../../images/icons/volume.png"
+import Volume from "./Volume"
 import Audio from './Audio/Audio'
 import './Player.scss'
 
@@ -27,19 +28,7 @@ export default class Player extends Component{
                         </div>
                     </div>
                     <Audio />
-                    <div className="nowPlaiyngRight">
-                        <div className="volumeBar">
-                            <button className="control-button volume">
-                                <img src={volume} alt="volume"/>
-                            </button>
-
-                            <div className="progressBar">
-                                <div className="progressBarBg">
-                                    <div className="progress"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <Volume />
                 </div>
             </div>
         )
