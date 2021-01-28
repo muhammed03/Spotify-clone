@@ -17,7 +17,7 @@ function Audio() {
     <div className="player">
       <div className="player-content">
         <audio id="audio">
-          <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-7.mp3" />
+          <source src="https://podcasts.qurancentral.com/mishary-rashid-alafasy/mishary-rashid-alafasy-001-muslimcentral.com.mp3" />
           Your browser does not support the <code>audio</code> element.
         </audio>
         <div className="controls">
