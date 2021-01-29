@@ -7,17 +7,17 @@ $greenMain: #1db954;
 
 @font-face {
   font-family: circular-book;
-  src: url(../../fonts/CircularStd-Book.otf);
+  src: url(../../../fonts/CircularStd-Book.otf);
 }
 
 @font-face {
   font-family: circular-bold;
-  src: url(../../fonts/CircularStd-Bold.otf);
+  src: url(../../../fonts/CircularStd-Bold.otf);
 }
 
 @font-face {
   font-family: circular-black;
-  src: url(../../fonts/CircularStd-Black.otf);
+  src: url(../../../fonts/CircularStd-Black.otf);
 }
 
 .uppercase {
@@ -33,6 +33,7 @@ $greenMain: #1db954;
 }
 
 .playlistPage {
+    margin-top: 2px;
     background-color: rgb(214, 214, 214);
     .mainInner {
       background-image: -webkit-gradient(
@@ -105,7 +106,6 @@ $greenMain: #1db954;
         margin: 0;
         line-height: 1;
         font-family: circular-black;
-        word-spacing: -18px;
         letter-spacing: -6px;
       }
       .tagline {
@@ -129,7 +129,6 @@ $greenMain: #1db954;
             width: 4px;
             height: 4px;
             background: white;
-            overflow: hidden;
             border-radius: 50%;
             position: absolute;
             margin-left: -10px;

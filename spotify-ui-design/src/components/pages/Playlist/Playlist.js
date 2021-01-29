@@ -1,7 +1,7 @@
 import React from 'react'
-import { ReactComponent as PlayIcon } from '../../svgs/play.svg'
-import { ReactComponent as HeartIcon } from '../../svgs/heart.svg'
-import { ReactComponent as NoteIcon } from '../../svgs/note.svg'
+import { ReactComponent as PlayIcon } from '../../../svgs/play.svg'
+import { ReactComponent as HeartIcon } from '../../../svgs/heart.svg'
+import { ReactComponent as NoteIcon } from '../../../svgs/note.svg'
 import './Playlist.scss'
 
 const PlaylistPage = () => {

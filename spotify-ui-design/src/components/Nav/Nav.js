@@ -3,6 +3,8 @@ import React from 'react'
 import { ReactComponent as HomeIcon } from '../../svgs/home.svg'
 import { ReactComponent as SearchIcon } from '../../svgs/search.svg'
 import { ReactComponent as LibraryIcon } from '../../svgs/library.svg'
+import { ReactComponent as CreateIcon } from '../../svgs/Plus.svg'
+import liked from '../../images/liked.png'
 import { Link } from 'react-router-dom'
 import './Nav.scss'
 
@@ -22,22 +24,37 @@ const Nav = () => {
                 <Link to="/">
                     <li className="active">
                         <HomeIcon />
-                             Home
-                </li>
+                        Home
+                    </li>
                 </Link>
                 <Link to="/search">
                     <li>
                         <SearchIcon />
-            Search
-          </li>
+                        Search
+                    </li>
                 </Link>
                 <Link to="/your-library">
                     <li>
                         <LibraryIcon />
-            Your Library
-          </li>
+                        Your Library
+                    </li>
                 </Link>
             </ul>
+            <div className="lowerNav">
+                <h1>Playlists</h1>
+                <ul>
+                    <li>
+                        <CreateIcon />
+                        Create Playlist
+                    </li>
+                    <Link to="/liked">
+                        <li>
+                            <img className="liked" src = {liked} alt="Liked"/>
+                            Liked
+                        </li>
+                    </Link>
+                </ul>
+            </div>
         </div>
     )
 }

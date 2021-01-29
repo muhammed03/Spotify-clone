@@ -1,7 +1,7 @@
 import React from 'react'
 import Playlists from '../Playlists'
 
-const Categories = () => {
+const Categories = ({albumData}) => {
 
     const dataCategories = [
         {
@@ -18,11 +18,7 @@ const Categories = () => {
             id: 3,
             name: 'Pop',
             tagline: 'Special for you',
-        },
-        {
-            id: 4,
-            name: 'Good morning',
-        },
+        }
     ]
 
     return (
@@ -31,7 +27,7 @@ const Categories = () => {
                 <div className="cardsWrap">
                     <h2>{category.name}</h2>
                     <p className="subText">{category.tagline}</p>
-                    <Playlists category_id={category.id}  />
+                    <Playlists category_id={category.id}  albumData={albumData}/>
                 </div>
             ))}
         </div>

@@ -2,19 +2,25 @@ import React from 'react'
 import Categories from '../Categories/'
 import Header from '../Header/'
 import { Switch, Route } from 'react-router-dom'
-import PlaylistPage from '../pages/Playlist'
+import PlaylistPage from '../pages/Playlist/Playlist'
+import LikedPage from '../pages/Liked/Liked'
 import './Main.scss'
 
-const Main = () => {
+const Main = ({album, audio}) => {
     return (
         <div className="main">
             <Header />
             <div className="mainContent">
                 <Switch>
-                    <Route path="/" exact component={Categories}></Route>
+                    <Route path="/" exact>
+                        <Categories albumData={album}/>
+                    </Route>
                     <Route path="/search">Search</Route>
-                    <Route path="/your-library">Your-libary</Route>
-                    <Route path="/playlist/" component={PlaylistPage}></Route>
+                    <Route path="/your-library">Your-library</Route>
+                    <Route path="/playlist/">
+                        <PlaylistPage />
+                    </Route>
+                    <Route path="/liked/" component={LikedPage}></Route>
                 </Switch>
             </div>
         </div>
