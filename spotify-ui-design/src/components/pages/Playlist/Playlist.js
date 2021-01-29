@@ -1,11 +1,15 @@
 import React from 'react'
+import { useParams } from 'react-router-dom'
 import { ReactComponent as PlayIcon } from '../../../svgs/play.svg'
 import { ReactComponent as HeartIcon } from '../../../svgs/heart.svg'
-import { ReactComponent as NoteIcon } from '../../../svgs/note.svg'
+import AudioList from './AudioList'
 import './Playlist.scss'
 
-const PlaylistPage = () => {
+const PlaylistPage = ({audioData, albumData}) => {
 
+    let { id } = useParams()
+
+    let matchedAlbum = albumData.filter(album => album.album_id === parseInt(id))
 
     return (
         <div className="playlistPage">
@@ -19,10 +23,9 @@ const PlaylistPage = () => {
                     </div>
                     <div className="playlistPageContent">
                         <p className="smallText uppercase bold">Playlist</p>
-                        <h1>Playlist Name</h1>
-
+                        <h1>{matchedAlbum[0].album_name}</h1>
                         <p className="tagline">
-                           Playlist Tag
+                            {matchedAlbum[0].album_tag}
                         </p>
                         <div className="playlistPageDesc">
                             <p className="spotify">Spotify</p>
@@ -44,60 +47,7 @@ const PlaylistPage = () => {
                         </div>
                     </div>
 
-                    <ul className="songList">
-                        <li>
-                            <div className="songIcon">
-                                <NoteIcon className="noteI" />
-                                <PlayIcon className="playI" />
-                            </div>
-                            <div className="songDetails">
-                                <h3>Playlist Name</h3>
-                                <span>Playlist Author</span>
-                            </div>
-                            <div className="songTime">
-                                <span>duration</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div className="songIcon">
-                                <NoteIcon className="noteI" />
-                                <PlayIcon className="playI" />
-                            </div>
-                            <div className="songDetails">
-                                <h3>Playlist Name</h3>
-                                <span>Playlist Author</span>
-                            </div>
-                            <div className="songTime">
-                                <span>duration</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div className="songIcon">
-                                <NoteIcon className="noteI" />
-                                <PlayIcon className="playI" />
-                            </div>
-                            <div className="songDetails">
-                                <h3>Playlist Name</h3>
-                                <span>Playlist Author</span>
-                            </div>
-                            <div className="songTime">
-                                <span>duration</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div className="songIcon">
-                                <NoteIcon className="noteI" />
-                                <PlayIcon className="playI" />
-                            </div>
-                            <div className="songDetails">
-                                <h3>Playlist Name</h3>
-                                <span>Playlist Author</span>
-                            </div>
-                            <div className="songTime">
-                                <span>duration</span>
-                            </div>
-                        </li>
-                    </ul>
+                    <AudioList audioData={audioData}/>
                 </div>
             </div>
         </div>

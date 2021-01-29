@@ -17,8 +17,8 @@ const Main = ({album, audio}) => {
                     </Route>
                     <Route path="/search">Search</Route>
                     <Route path="/your-library">Your-library</Route>
-                    <Route path="/playlist/">
-                        <PlaylistPage />
+                    <Route path="/playlist/:id">
+                        <PlaylistPage albumData={album} audioData={audio}/>
                     </Route>
                     <Route path="/liked/" component={LikedPage}></Route>
                 </Switch>

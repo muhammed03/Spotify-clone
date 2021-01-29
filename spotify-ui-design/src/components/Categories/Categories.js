@@ -23,8 +23,8 @@ const Categories = ({albumData}) => {
 
     return (
         <div className="mainInner">
-            {dataCategories.map((category) => (
-                <div className="cardsWrap">
+            {dataCategories.map((category, id) => (
+                <div className="cardsWrap" key={id}>
                     <h2>{category.name}</h2>
                     <p className="subText">{category.tagline}</p>
                     <Playlists category_id={category.id}  albumData={albumData}/>
