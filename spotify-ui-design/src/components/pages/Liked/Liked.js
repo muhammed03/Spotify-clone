@@ -1,7 +1,7 @@
 import React from 'react'
 import { ReactComponent as PlayIcon } from '../../../assets/svgs/play.svg'
 import { ReactComponent as NoteIcon } from '../../../assets/svgs/note.svg'
-import likedImg from '../../../images/liked.png'
+import likedImg from '../../../assets/images/liked.png'
 import './Liked.scss'
 
 const LikedPage = ({liked}) => {

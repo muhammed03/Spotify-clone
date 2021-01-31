@@ -1,5 +1,5 @@
 import React from "react";
-import play from "../../../images/icons/play.png"
+import play from "../../../assets/images/icons/play.png"
 
 export default function Play(props) {
   const { handleClick } = props;

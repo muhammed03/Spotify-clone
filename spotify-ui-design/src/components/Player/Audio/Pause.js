@@ -1,5 +1,5 @@
 import React from "react";
-import pause from "../../../images/icons/pause.png"
+import pause from "../../../assets/images/icons/pause.png"
 
 export default function Play(props) {
   const { handleClick } = props;
