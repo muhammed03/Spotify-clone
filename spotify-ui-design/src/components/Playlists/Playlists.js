@@ -1,5 +1,5 @@
 import React from 'react'
-import { ReactComponent as PlayIcon } from '../../svgs/play.svg'
+import { ReactComponent as PlayIcon } from '../../assets/svgs/play.svg'
 import { Link } from 'react-router-dom'
 import './Playlists.scss'
 

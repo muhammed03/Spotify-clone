@@ -1,5 +1,5 @@
 import React from "react";
-import volume from "../../images/icons/volume.png"
+import volume from "../../assets/images/icons/volume.png"
 
 export default function Volume() {
 

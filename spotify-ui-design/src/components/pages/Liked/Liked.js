@@ -1,11 +1,11 @@
 import React from 'react'
-import { ReactComponent as PlayIcon } from '../../../svgs/play.svg'
-import { ReactComponent as NoteIcon } from '../../../svgs/note.svg'
-import liked from '../../../images/liked.png'
+import { ReactComponent as PlayIcon } from '../../../assets/svgs/play.svg'
+import { ReactComponent as NoteIcon } from '../../../assets/svgs/note.svg'
+import likedImg from '../../../images/liked.png'
 import './Liked.scss'
 
-const LikedPage = () => {
-
+const LikedPage = ({liked}) => {
+    console.log(liked)
 
     return (
         <div className="likedPage">
@@ -13,7 +13,7 @@ const LikedPage = () => {
                 <div className="likedPageInfo">
                     <div className="likedPageImage">
                         <img
-                            src={liked}
+                            src={likedImg}
                             alt="pic"
                         />
                     </div>

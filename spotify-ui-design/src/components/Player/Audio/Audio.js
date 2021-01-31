@@ -10,14 +10,13 @@ import './styles.scss';
 
 import useAudioPlayer from './useAudioPlayer';
 
-function Audio() {
+function Audio({checkedAudio}) {
   const { curTime, duration, playing, setPlaying, setClickedTime } = useAudioPlayer();
-
   return (
     <div className="player">
       <div className="player-content">
         <audio id="audio">
-          <source src="https://podcasts.qurancentral.com/mishary-rashid-alafasy/mishary-rashid-alafasy-018-muslimcentral.com.mp3" />
+          <source src={checkedAudio.audio_url} />
           Your browser does not support the <code>audio</code> element.
         </audio>
         <div className="controls">

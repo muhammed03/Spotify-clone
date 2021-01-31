@@ -1,10 +1,10 @@
 
 import React from 'react'
-import { ReactComponent as HomeIcon } from '../../svgs/home.svg'
-import { ReactComponent as SearchIcon } from '../../svgs/search.svg'
-import { ReactComponent as LibraryIcon } from '../../svgs/library.svg'
-import { ReactComponent as CreateIcon } from '../../svgs/Plus.svg'
-import liked from '../../images/liked.png'
+import { ReactComponent as HomeIcon } from '../../assets/svgs/home.svg'
+import { ReactComponent as SearchIcon } from '../../assets/svgs/search.svg'
+import { ReactComponent as LibraryIcon } from '../../assets/svgs/library.svg'
+import { ReactComponent as CreateIcon } from '../../assets/svgs/Plus.svg'
+import liked from '../../assets/images/liked.png'
 import { Link } from 'react-router-dom'
 import './Nav.scss'
 

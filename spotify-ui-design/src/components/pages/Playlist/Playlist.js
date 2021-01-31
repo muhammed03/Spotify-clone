@@ -1,11 +1,11 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
-import { ReactComponent as PlayIcon } from '../../../svgs/play.svg'
-import { ReactComponent as HeartIcon } from '../../../svgs/heart.svg'
+import { ReactComponent as PlayIcon } from '../../../assets/svgs/play.svg'
+import { ReactComponent as HeartIcon } from '../../../assets/svgs/heart.svg'
 import AudioList from './AudioList'
 import './Playlist.scss'
 
-const PlaylistPage = ({audioData, albumData}) => {
+const PlaylistPage = ({audioData, albumData, audioPlay}) => {
 
     let { id } = useParams()
 
@@ -17,7 +17,7 @@ const PlaylistPage = ({audioData, albumData}) => {
                 <div className="playlistPageInfo">
                     <div className="playlistPageImage">
                         <img
-                            src="https://images.unsplash.com/photo-1611110228353-80794af777dd?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+                            src={matchedAlbum[0].album_img}
                             alt="pic"
                         />
                     </div>
@@ -47,7 +47,7 @@ const PlaylistPage = ({audioData, albumData}) => {
                         </div>
                     </div>
 
-                    <AudioList audioData={audioData}/>
+                    <AudioList audioData={audioData} onClicked={audioPlay}/>
                 </div>
             </div>
         </div>

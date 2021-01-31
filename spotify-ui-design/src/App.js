@@ -50,7 +50,7 @@ export default class App extends React.Component {
         {
           audio_id: 5,
           album_id: 2,
-          audio_name: '2st audio of 2nd album',
+          audio_name: '2nd audio of 2nd album',
           audio_author: 'author of second album',
           audio_url: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3' 
         },
@@ -73,7 +73,7 @@ export default class App extends React.Component {
         {
           audio_id: 8,
           album_id: 3,
-          audio_name: '2st audio of 3rd album',
+          audio_name: '2nd audio of 3rd album',
           audio_author: 'author of third album',
           audio_url: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-9.mp3' 
         },
@@ -85,17 +85,33 @@ export default class App extends React.Component {
           audio_url: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-10.mp3' 
         }
       ]
-    ]
+    ],
+
+    checkedAudio: {audio_url: `https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3`},
+    liked: {likedSongs: "Liked"},
+
   }
+
+  audioPlay = (el) => {
+    this.setState(({checkedAudio,liked}) => {
+      let newArray = [el]
+      console.log(liked)
+      return {
+        checkedAudio: newArray,
+      }
+    });
+  }
+
   render() {
-    const {albumData, audioData} = this.state
+    const {albumData, audioData, liked} = this.state
+
     return (
       <div className="outerWrap">
         <div className="App">
           <Nav />
-          <Main album={albumData} audio={audioData}/>
+          <Main onSearchChange={this.onSearchChange} album={albumData} audio={audioData} audioPlay={this.audioPlay} liked={liked}/>
         </div>
-        <Player />
+        <Player checkedAudio={this.state.checkedAudio}/>
       </div>
     )
   }

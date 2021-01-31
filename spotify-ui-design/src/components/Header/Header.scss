@@ -33,22 +33,53 @@ $greenMain: #1db954;
     position: fixed;
     top: 0;
     z-index: 2;
-    .upperNav-buttons button{
-      border-radius: 50%;
-      background-color: $greyDark;
-      outline: none;
-      border: none;
-      margin-right: 15px;
-      font-weight: normal;
-      cursor: pointer;
-      transition: all 0.3s ease-in-out;
-      font-family: circular-bold;
-      align-items: center;
-      justify-content: center;
-      svg {
-        padding-top: 5px;
-        width: 22px;
-        height: 28px;
+    .upperNav-buttons{ 
+      width: auto;
+      button{
+        border-radius: 50%;
+        background-color: $greyDark;
+        outline: none;
+        border: none;
+        margin-right: 10px;
+        font-weight: normal;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        font-family: circular-bold;
+        align-items: center;
+        justify-content: center;
+        svg {
+          padding-top: 5px;
+          width: 22px;
+          height: 28px;
+        }
+      }
+    }
+    .headerCenter{
+      width: 365px;
+      background-color: white;
+      border-radius: 500px;
+      display: flex;
+      height: 40px;
+      .searchWrapper {
+        display: flex;
+        margin: auto;
+        svg {
+          path{
+            color: black;
+          }
+        }
+        input {
+          font-size: 14px;
+          font-family: circular-book;
+          width: 290px;
+          border: none;
+          outline: none;
+          color: black;
+          padding-left: 10px;
+        }
+        .hidden {
+          visibility: hidden;
+        }
       }
     }
 }
