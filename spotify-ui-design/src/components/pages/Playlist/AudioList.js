@@ -11,7 +11,7 @@ const AudioList = ({audioData, onClicked}) => {
     return(
         <ul className="songList">
             {matchedAudio.map(function(audio, id){
-                return <AudioListItem onPlayed={onClicked} key={id} data={audio}/>
+                return <AudioListItem onPlayed={onClicked} key={id} data={audio} number={id+1} />
             })}
         </ul>
     ) 

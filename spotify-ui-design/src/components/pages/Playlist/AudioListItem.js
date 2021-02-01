@@ -1,13 +1,12 @@
 import React from 'react'
 import { ReactComponent as PlayIcon } from '../../../assets/svgs/play.svg'
-import { ReactComponent as NoteIcon } from '../../../assets/svgs/note.svg'
 
-const AudioListItem = ({data, onPlayed}) => {
+const AudioListItem = ({data, onPlayed, number}) => {
 
         return (   
             <li onClick={() => onPlayed(data)}>
                 <div className="songIcon">
-                    <NoteIcon className="noteI" />
+                    <span className="noteI">{number}</span>
                     <PlayIcon className="playI" />
                 </div>
                 <div className="songDetails">

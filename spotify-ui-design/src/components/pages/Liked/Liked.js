@@ -1,8 +1,8 @@
 import React from 'react'
 import { ReactComponent as PlayIcon } from '../../../assets/svgs/play.svg'
-import { ReactComponent as NoteIcon } from '../../../assets/svgs/note.svg'
 import likedImg from '../../../assets/images/liked.png'
 import './Liked.scss'
+import Login from '../../Login'
 
 const LikedPage = ({liked}) => {
     console.log(liked)
@@ -39,7 +39,7 @@ const LikedPage = ({liked}) => {
                     <ul className="songList">
                         <li>
                             <div className="songIcon">
-                                <NoteIcon className="noteI" />
+                                <span className="noteI"> 1</span>
                                 <PlayIcon className="playI" />
                             </div>
                             <div className="songDetails">
@@ -52,59 +52,7 @@ const LikedPage = ({liked}) => {
                         </li>
                         <li>
                             <div className="songIcon">
-                                <NoteIcon className="noteI" />
-                                <PlayIcon className="playI" />
-                            </div>
-                            <div className="songDetails">
-                                <h3>Playlist Name</h3>
-                                <span>Playlist Author</span>
-                            </div>
-                            <div className="songTime">
-                                <span>duration</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div className="songIcon">
-                                <NoteIcon className="noteI" />
-                                <PlayIcon className="playI" />
-                            </div>
-                            <div className="songDetails">
-                                <h3>Playlist Name</h3>
-                                <span>Playlist Author</span>
-                            </div>
-                            <div className="songTime">
-                                <span>duration</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div className="songIcon">
-                                <NoteIcon className="noteI" />
-                                <PlayIcon className="playI" />
-                            </div>
-                            <div className="songDetails">
-                                <h3>Playlist Name</h3>
-                                <span>Playlist Author</span>
-                            </div>
-                            <div className="songTime">
-                                <span>duration</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div className="songIcon">
-                                <NoteIcon className="noteI" />
-                                <PlayIcon className="playI" />
-                            </div>
-                            <div className="songDetails">
-                                <h3>Playlist Name</h3>
-                                <span>Playlist Author</span>
-                            </div>
-                            <div className="songTime">
-                                <span>duration</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div className="songIcon">
-                                <NoteIcon className="noteI" />
+                                <span className="noteI"> 2</span>
                                 <PlayIcon className="playI" />
                             </div>
                             <div className="songDetails">

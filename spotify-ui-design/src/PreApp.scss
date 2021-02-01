@@ -1,0 +1,88 @@
+$greyDark: #040404;
+$greyLight: #131313;
+$greyLighter: #282828;
+$greyText: #b3b3b3;
+$greyNav: #090909;
+$greenMain: #1db954;
+
+@font-face {
+  font-family: circular-book;
+  src: url(./assets/fonts/CircularStd-Book.otf);
+}
+
+@font-face {
+  font-family: circular-bold;
+  src: url(./assets/fonts/CircularStd-Bold.otf);
+}
+
+@font-face {
+  font-family: circular-black;
+  src: url(./assets/fonts/CircularStd-Black.otf);
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.smallText {
+  font-size: 0.75rem;
+  letter-spacing: 0.8px;
+  &.bold {
+    font-weight: 600;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  color: #fff;
+}
+
+html, body {
+  font-family: circular-book;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+.subText {
+  font-size: 0.9rem;
+  color: $greyText;
+}
+
+/* width */
+::-webkit-scrollbar {
+  transition: all 0.3s ease-in-out;
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f100; 
+  transition: all 0.3s ease-in-out;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:#5a5a5a; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  transition: all 0.3s ease-in-out;
+  background: rgb(133, 133, 133); 
+}
+
+.PreApp {
+  height: calc(100vh - 90px);
+  background: $greyLight;
+  display: flex;
+}
+
+
+.outerWrap {
+  background: grey;
+  height: 100vh;
+  min-height: 100%;
+}
+
